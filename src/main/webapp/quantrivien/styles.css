@@ -1,0 +1,48 @@
+#name-label {
+	width: 12rem;
+	font-size: 100%;
+}
+
+html, body, main, #side-bar {
+	height: 100%;
+	overflow-y: auto;
+}
+
+table, tr, th, td {
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #0187c6;
+}
+/* CSS Ä‘á»ƒ loáº¡i bá»� viá»�n cho button */
+button.btn.btn-outline-info {
+    border: none;
+}
+
+/* Náº¿u báº¡n muá»‘n loáº¡i bá»� viá»�n hover cÅ©ng */
+button.btn.btn-outline-info:hover {
+    border: none;
+}
+
+.tbl-header {
+	width: calc(100% - 17px);
+	width: -webkit-calc(100% - 17px);
+	width: -moz-calc(100% - 17px);
+}
+
+.link-button {
+	text-decoration: none;
+	color: #fff;
+	padding: 0 30%
+}
+
+.link-button:hover {
+	text-decoration: none;
+	color: #333;
+}
+

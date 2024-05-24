@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.notifications {
+    position: fixed  !important;
+    top: 110px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast-header{
+	background-color:transparent !important;
+	font-weight: bold;
+	font-size: 19px;
+}
+#success{
+	 background-color: transparent;
+	 border :none;
+}
+#error{
+	 background-color: transparent;
+	 border :none;
+}
+
+.toast1 {
+    position: relative;
+    margin-bottom: 10px;
+    color: #fff  !important;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    border-radius: 5px;
+    --color: #f24d4c;
+    background-image: linear-gradient(to right, #f24d4c55, #22242F 30%);
+    animation: show_toast 0.3s ease forwards;
+}
+
+
+.toast {
+    position: relative;
+    margin-bottom: 10px;
+    color: #fff  !important;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    border-radius: 5px;
+    --color: #0abf30;
+    background-image: linear-gradient(to right, #0abf3055, #222745 30%);
+    animation: show_toast 0.3s ease forwards;
+}
+
+
+
+@keyframes show_toast {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-5%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+.toast::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color);
+    box-shadow: 0 0 10px var(--color);
+    content: '';
+    width: 100%;
+    height: 3px;
+    animation: timeOut 20s linear 1 forwards;
+}
+
+
+.toast1::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color);
+    box-shadow: 0 0 10px var(--color);
+    content: '';
+    width: 100%;
+    height: 3px;
+    animation: timeOut 20s linear 1 forwards;
+}
+
+@keyframes timeOut {
+    to {
+        width: 0%;
+    }
+}
